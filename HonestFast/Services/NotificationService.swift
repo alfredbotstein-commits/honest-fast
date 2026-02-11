@@ -40,7 +40,9 @@ final class NotificationService {
             4: ("4 Hours In", "Your blood sugar is settling down."),
             8: ("8 Hours In", "Blood sugar at baseline. Burning through glycogen."),
             12: ("12 Hours 🔥", "Fat burning is kicking in."),
-            16: ("16 Hours ✨", "Autophagy territory. You're crushing it."),
+            16: ("16 Hours ✨", "Heavy ketosis. You're in the zone."),
+            20: ("20 Hours 💪", "Deep ketosis. Your body is fully fat-adapted."),
+            24: ("24 Hours 🧬", "Autophagy territory. Cellular cleanup in progress."),
         ]
         
         guard let (title, body) = messages[hours] else { return }
@@ -66,7 +68,7 @@ final class NotificationService {
     }
     
     func cancelAllFastNotifications() {
-        let ids = ["fast-complete", "milestone-4h", "milestone-8h", "milestone-12h", "milestone-16h"]
+        let ids = ["fast-complete", "milestone-4h", "milestone-8h", "milestone-12h", "milestone-16h", "milestone-20h", "milestone-24h"]
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ids)
     }
 }

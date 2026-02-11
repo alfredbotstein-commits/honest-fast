@@ -10,6 +10,7 @@
 		0523358312C4AE76CBE4C710 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */; };
 		06069E2256D3D2242AF66764 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */; };
 		155FE240B25CB25C8A5BE952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */; };
+		15F671DA40755EE0BAE7CE3B /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC81AF66AF2DD21913F258 /* WatchConnectivityService.swift */; };
 		2E80F6AB24B37F3900104C21 /* HonestFastWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		457ED6C78BC9D259C5309F8F /* FastingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B121CB2524A39A068FDEBA /* FastingPlan.swift */; };
 		4AC98B19558A4CFAA3BD500F /* WatchTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */; };
@@ -21,9 +22,11 @@
 		9D2C55E42D52A52D5159614D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453807A56A9E8954F52F00E /* ContentView.swift */; };
 		9E53B0B348F425FAE64990F0 /* TimerRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14DB95537DEC0BD7446C72D /* TimerRingView.swift */; };
 		B123B9094279630FDEA95342 /* FastingStageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355155F72C623546846625AA /* FastingStageBadge.swift */; };
+		B33D90781195395AAD28780B /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D2B93A9C4285E15892AFB /* WatchConnectivityService.swift */; };
 		BAB826DF735DCDC53399C0F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13227BA78A8E55FD0C371A6 /* NotificationService.swift */; };
 		C5B7D4685BEA3410CE5F722F /* PlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7312D6E00EE85156FEDADEA8 /* PlanCard.swift */; };
 		C929E058326D9024FC1346A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E8359FE762F3B28CD139BA /* Assets.xcassets */; };
+		CFED460A2E97EC5B7CFFBE73 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE80F87C5BF410E93954052 /* SharedDefaults.swift */; };
 		D6B1D75B5E61F8A24FDBD006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */; };
 		DA0ADE1F2473C471C07C070E /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA2B0569102D15BCE35137 /* StatCard.swift */; };
 		DDA5278483EA316FC4A73537 /* HonestFastWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D884FB1FD8B4B53BF7147B /* HonestFastWidget.swift */; };
@@ -72,14 +75,19 @@
 		43632568F7561CE488F05245 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HonestFastWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAA2B0569102D15BCE35137 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		4F7D2B93A9C4285E15892AFB /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
 		5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		7312D6E00EE85156FEDADEA8 /* PlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCard.swift; sourceTree = "<group>"; };
+		78EC81AF66AF2DD21913F258 /* WatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityService.swift; sourceTree = "<group>"; };
+		7EE80F87C5BF410E93954052 /* SharedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefaults.swift; sourceTree = "<group>"; };
 		8A351C52E68E87AD1637D59C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		9EA174D64FC5B3513E0718C1 /* HonestFastWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastWatchApp.swift; sourceTree = "<group>"; };
 		AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF0CC7E4294C79D5966AD417 /* HonestFastWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HonestFastWatch.entitlements; sourceTree = "<group>"; };
 		B4B121CB2524A39A068FDEBA /* FastingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingPlan.swift; sourceTree = "<group>"; };
 		C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTimerView.swift; sourceTree = "<group>"; };
+		CAF97E118DE0FFA50265C7A1 /* HonestFastWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HonestFastWidget.entitlements; sourceTree = "<group>"; };
 		CF415A00D165089757617323 /* TimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerScreen.swift; sourceTree = "<group>"; };
 		D13227BA78A8E55FD0C371A6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		D1F0F5918B2ECE6E402825EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastApp.swift; sourceTree = "<group>"; };
 		E14DB95537DEC0BD7446C72D /* TimerRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRingView.swift; sourceTree = "<group>"; };
 		E91903C7DFEEA878BDC67275 /* FastRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastRecord.swift; sourceTree = "<group>"; };
+		EBD4D472832F3786F90179F4 /* HonestFast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HonestFast.entitlements; sourceTree = "<group>"; };
 		EFCB8B0DC0974CC56D892134 /* FastingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingStage.swift; sourceTree = "<group>"; };
 		F041F9FB9A73E6B88C811EAA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
@@ -126,7 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				D4E8359FE762F3B28CD139BA /* Assets.xcassets */,
+				AF0CC7E4294C79D5966AD417 /* HonestFastWatch.entitlements */,
 				9EA174D64FC5B3513E0718C1 /* HonestFastWatchApp.swift */,
+				4F7D2B93A9C4285E15892AFB /* WatchConnectivityService.swift */,
 				C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */,
 			);
 			path = HonestFastWatch;
@@ -194,6 +205,8 @@
 			children = (
 				F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */,
 				D13227BA78A8E55FD0C371A6 /* NotificationService.swift */,
+				7EE80F87C5BF410E93954052 /* SharedDefaults.swift */,
+				78EC81AF66AF2DD21913F258 /* WatchConnectivityService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */,
+				CAF97E118DE0FFA50265C7A1 /* HonestFastWidget.entitlements */,
 				D6D884FB1FD8B4B53BF7147B /* HonestFastWidget.swift */,
 			);
 			path = HonestFastWidget;
@@ -240,6 +254,7 @@
 			children = (
 				D1F0F5918B2ECE6E402825EB /* Assets.xcassets */,
 				3453807A56A9E8954F52F00E /* ContentView.swift */,
+				EBD4D472832F3786F90179F4 /* HonestFast.entitlements */,
 				DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */,
 				CF87765AEB31C975CDF90452 /* Extensions */,
 				52FD0E2733E16AECA6E0003C /* Models */,
@@ -399,11 +414,13 @@
 				C5B7D4685BEA3410CE5F722F /* PlanCard.swift in Sources */,
 				F6BE9E8811EDF1D07E737DFE /* PlanPickerSheet.swift in Sources */,
 				0523358312C4AE76CBE4C710 /* SettingsScreen.swift in Sources */,
+				CFED460A2E97EC5B7CFFBE73 /* SharedDefaults.swift in Sources */,
 				DA0ADE1F2473C471C07C070E /* StatCard.swift in Sources */,
 				880D39C14706C0875C628A0D /* Theme.swift in Sources */,
 				9E53B0B348F425FAE64990F0 /* TimerRingView.swift in Sources */,
 				DF8A0054634651ED91900A93 /* TimerScreen.swift in Sources */,
 				06069E2256D3D2242AF66764 /* UserPreferences.swift in Sources */,
+				15F671DA40755EE0BAE7CE3B /* WatchConnectivityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D6050AAD62EE81DA44F1B91 /* HonestFastWatchApp.swift in Sources */,
+				B33D90781195395AAD28780B /* WatchConnectivityService.swift in Sources */,
 				4AC98B19558A4CFAA3BD500F /* WatchTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HonestFastWatch/HonestFastWatch.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast WKCompanionAppBundleIdentifier=com.loopspur.honestfast";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.watch;
@@ -517,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HonestFastWatch/HonestFastWatch.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast WKCompanionAppBundleIdentifier=com.loopspur.honestfast";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.watch;
@@ -530,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HonestFast/HonestFast.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "UILaunchScreen_Generation=YES UIApplicationSceneManifest_Generation=YES CFBundleDisplayName=Honest Fast CFBundleName=Honest Fast UIBackgroundModes=";
@@ -548,6 +569,7 @@
 		C71BF6C17F5A71AB666F9F39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HonestFastWidget/HonestFastWidget.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast Widget NSExtension_NSExtensionPointIdentifier=com.apple.widgetkit-extension";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,6 +586,7 @@
 		E729A4C37E167FC8AB48B205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HonestFastWidget/HonestFastWidget.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast Widget NSExtension_NSExtensionPointIdentifier=com.apple.widgetkit-extension";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -581,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HonestFast/HonestFast.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_VALUES = "UILaunchScreen_Generation=YES UIApplicationSceneManifest_Generation=YES CFBundleDisplayName=Honest Fast CFBundleName=Honest Fast UIBackgroundModes=";

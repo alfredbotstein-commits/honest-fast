@@ -38,6 +38,55 @@ final class FastingManager: ObservableObject {
     func configure(modelContext: ModelContext) {
         self.modelContext = modelContext
         loadActiveFast()
+        setupWatchSync()
+    }
+    
+    private func setupWatchSync() {
+        WatchConnectivityService.shared.activate()
+        WatchConnectivityService.shared.onStateReceived = { [weak self] dict in
+            Task { @MainActor in
+                self?.handleWatchStateUpdate(dict)
+            }
+        }
+    }
+    
+    private func handleWatchStateUpdate(_ dict: [String: Any]) {
+        guard let modelContext else { return }
+        let watchFasting = dict["isFasting"] as? Bool ?? false
+        let watchStartTime = dict["fastStartTime"] as? Double ?? 0
+        let watchTargetHours = dict["fastDurationHours"] as? Double ?? 16
+        let watchPlanName = dict["planName"] as? String ?? "16:8"
+        
+        if watchFasting && currentFast == nil {
+            // Watch started a fast — create record
+            let record = FastRecord(
+                startDate: Date(timeIntervalSince1970: watchStartTime),
+                targetHours: watchTargetHours,
+                planName: watchPlanName
+            )
+            modelContext.insert(record)
+            try? modelContext.save()
+            currentFast = record
+            isComplete = false
+            startTimer()
+        } else if !watchFasting && currentFast != nil {
+            // Watch ended the fast
+            endFast()
+        }
+    }
+    
+    private func syncToShared() {
+        if let fast = currentFast {
+            SharedDefaults.updateFastingState(
+                isFasting: true,
+                startTime: fast.startDate,
+                targetHours: fast.targetHours,
+                planName: fast.planName
+            )
+        } else {
+            SharedDefaults.clearFastingState()
+        }
+        WatchConnectivityService.shared.sendStateToWatch()
     }
     
     private func loadActiveFast() {
@@ -49,7 +98,10 @@ final class FastingManager: ObservableObject {
         if let active = try? modelContext.fetch(descriptor).first {
             currentFast = active
             selectedPlan = FastingPlan.plan(for: active.planName) ?? FastingPlan.plans[0]
+            syncToShared()
             startTimer()
+        } else {
+            SharedDefaults.clearFastingState()
         }
     }
     
@@ -69,6 +121,7 @@ final class FastingManager: ObservableObject {
         
         HapticService.startFast()
         scheduleNotifications(for: record)
+        syncToShared()
         startTimer()
     }
     
@@ -87,6 +140,7 @@ final class FastingManager: ObservableObject {
         progress = 0
         timeRemaining = 0
         elapsed = 0
+        syncToShared()
     }
     
     func completeFast() {
@@ -98,6 +152,7 @@ final class FastingManager: ObservableObject {
         HapticService.fastComplete()
         isComplete = true
         stopTimer()
+        syncToShared()
     }
     
     private func startTimer() {
@@ -137,7 +192,7 @@ final class FastingManager: ObservableObject {
         NotificationService.shared.scheduleFastComplete(at: endDate, planName: fast.planName)
         
         // Milestones
-        for hours in [4, 8, 12, 16] {
+        for hours in [4, 8, 12, 16, 20, 24] {
             let milestoneDate = start.addingTimeInterval(Double(hours) * 3600)
             if milestoneDate > Date() && Double(hours) <= fast.targetHours {
                 NotificationService.shared.scheduleMilestone(hours: hours, at: milestoneDate)

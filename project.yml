@@ -19,6 +19,8 @@ targets:
     platform: iOS
     sources:
       - HonestFast
+    entitlements:
+      path: HonestFast/HonestFast.entitlements
     dependencies:
       - target: HonestFastWidget
     settings:
@@ -35,12 +37,15 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         SWIFT_EMIT_LOC_STRINGS: "YES"
         DEVELOPMENT_TEAM: ""
+        CODE_SIGN_ENTITLEMENTS: HonestFast/HonestFast.entitlements
 
   HonestFastWatch:
     type: application
     platform: watchOS
     sources:
       - HonestFastWatch
+    entitlements:
+      path: HonestFastWatch/HonestFastWatch.entitlements
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.loopspur.honestfast.watch
@@ -48,12 +53,15 @@ targets:
           CFBundleDisplayName=Honest Fast
           WKCompanionAppBundleIdentifier=com.loopspur.honestfast
         DEVELOPMENT_TEAM: ""
+        CODE_SIGN_ENTITLEMENTS: HonestFastWatch/HonestFastWatch.entitlements
 
   HonestFastWidget:
     type: app-extension
     platform: iOS
     sources:
       - HonestFastWidget
+    entitlements:
+      path: HonestFastWidget/HonestFastWidget.entitlements
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.loopspur.honestfast.widget
@@ -61,3 +69,4 @@ targets:
           CFBundleDisplayName=Honest Fast Widget
           NSExtension_NSExtensionPointIdentifier=com.apple.widgetkit-extension
         DEVELOPMENT_TEAM: ""
+        CODE_SIGN_ENTITLEMENTS: HonestFastWidget/HonestFastWidget.entitlements

@@ -1,9 +1,19 @@
 import SwiftUI
 
 struct WatchTimerView: View {
-    @AppStorage("fastStartTime") private var fastStartTime: Double = 0
-    @AppStorage("fastDurationHours") private var fastDurationHours: Double = 16
-    @AppStorage("isFasting") private var isFasting: Bool = false
+    @AppStorage("isFasting", store: UserDefaults(suiteName: "group.com.loopspur.honestfast"))
+    private var isFasting: Bool = false
+    
+    @AppStorage("fastStartTime", store: UserDefaults(suiteName: "group.com.loopspur.honestfast"))
+    private var fastStartTime: Double = 0
+    
+    @AppStorage("fastDurationHours", store: UserDefaults(suiteName: "group.com.loopspur.honestfast"))
+    private var fastDurationHours: Double = 16
+    
+    @AppStorage("planName", store: UserDefaults(suiteName: "group.com.loopspur.honestfast"))
+    private var planName: String = "16:8"
+    
+    @StateObject private var connectivity = WatchConnectivityService.shared
     
     @State private var now = Date()
     
@@ -62,6 +72,12 @@ struct WatchTimerView: View {
             .buttonStyle(.borderedProminent)
             .tint(isFasting ? .red : .green)
         }
+        .onAppear {
+            connectivity.activate()
+            connectivity.onStateReceived = { dict in
+                // @AppStorage will pick up changes from UserDefaults automatically
+            }
+        }
         .onReceive(timer) { _ in
             now = Date()
         }
@@ -71,9 +87,22 @@ struct WatchTimerView: View {
         if isFasting {
             isFasting = false
             fastStartTime = 0
+            connectivity.sendStateToPhone(
+                isFasting: false,
+                startTime: 0,
+                targetHours: fastDurationHours,
+                planName: planName
+            )
         } else {
-            fastStartTime = Date().timeIntervalSince1970
+            let startTime = Date().timeIntervalSince1970
+            fastStartTime = startTime
             isFasting = true
+            connectivity.sendStateToPhone(
+                isFasting: true,
+                startTime: startTime,
+                targetHours: fastDurationHours,
+                planName: planName
+            )
         }
     }
     
