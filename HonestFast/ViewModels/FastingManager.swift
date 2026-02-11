@@ -123,6 +123,15 @@ final class FastingManager: ObservableObject {
         scheduleNotifications(for: record)
         syncToShared()
         startTimer()
+        
+        // Live Activity
+        LiveActivityService.startActivity(
+            fastId: record.id.uuidString,
+            startTime: record.startDate,
+            targetHours: fastHours,
+            planName: planName,
+            stageName: currentStage.title
+        )
     }
     
     func endFast() {
@@ -133,6 +142,7 @@ final class FastingManager: ObservableObject {
         
         HapticService.endFast()
         NotificationService.shared.cancelAllFastNotifications()
+        LiveActivityService.endActivity()
         stopTimer()
         
         currentFast = nil
@@ -150,6 +160,7 @@ final class FastingManager: ObservableObject {
         try? modelContext.save()
         
         HapticService.fastComplete()
+        LiveActivityService.endActivity()
         isComplete = true
         stopTimer()
         syncToShared()
@@ -178,6 +189,16 @@ final class FastingManager: ObservableObject {
         timeRemaining = fast.timeRemaining
         progress = fast.progress
         currentStage = FastingStage.stage(for: elapsedHours)
+        
+        // Update Live Activity every 60 ticks (~1 min)
+        if Int(elapsed) % 60 == 0 {
+            LiveActivityService.updateActivity(
+                startTime: fast.startDate,
+                targetHours: fast.targetHours,
+                planName: fast.planName,
+                stageName: currentStage.title
+            )
+        }
         
         if timeRemaining <= 0 && !isComplete {
             completeFast()
