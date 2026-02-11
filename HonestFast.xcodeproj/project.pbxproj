@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0523358312C4AE76CBE4C710 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */; };
+		06069E2256D3D2242AF66764 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */; };
+		155FE240B25CB25C8A5BE952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */; };
+		457ED6C78BC9D259C5309F8F /* FastingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B121CB2524A39A068FDEBA /* FastingPlan.swift */; };
+		56E84B7C6B0CF4F7221BB8C1 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43632568F7561CE488F05245 /* HistoryScreen.swift */; };
+		5D48949008B9CB29E7E59256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F0F5918B2ECE6E402825EB /* Assets.xcassets */; };
+		852145804EC68FC93F8BC796 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */; };
+		880D39C14706C0875C628A0D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041F9FB9A73E6B88C811EAA /* Theme.swift */; };
+		9D2C55E42D52A52D5159614D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453807A56A9E8954F52F00E /* ContentView.swift */; };
+		9E53B0B348F425FAE64990F0 /* TimerRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14DB95537DEC0BD7446C72D /* TimerRingView.swift */; };
+		B123B9094279630FDEA95342 /* FastingStageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355155F72C623546846625AA /* FastingStageBadge.swift */; };
+		BAB826DF735DCDC53399C0F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13227BA78A8E55FD0C371A6 /* NotificationService.swift */; };
+		C5B7D4685BEA3410CE5F722F /* PlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7312D6E00EE85156FEDADEA8 /* PlanCard.swift */; };
+		DA0ADE1F2473C471C07C070E /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA2B0569102D15BCE35137 /* StatCard.swift */; };
+		DF8A0054634651ED91900A93 /* TimerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF415A00D165089757617323 /* TimerScreen.swift */; };
+		E3D49A756072856BDB1EBEBB /* HonestFastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */; };
+		EC3BB309324C05A051F54E41 /* FastRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91903C7DFEEA878BDC67275 /* FastRecord.swift */; };
+		EF51376649A3BEBE42021091 /* FastingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB8B0DC0974CC56D892134 /* FastingStage.swift */; };
+		F397199A7458A29452D72A8F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1721C7D2C02C290404EA5 /* OnboardingView.swift */; };
+		F4B8FF36101024AF2C480165 /* FastingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47462A81526805E8AB5B1DD /* FastingManager.swift */; };
+		F6BE9E8811EDF1D07E737DFE /* PlanPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A39890955712A05F150E167 /* PlanPickerSheet.swift */; };
+		F8404AB3DA0CB2578F4E6A45 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A351C52E68E87AD1637D59C /* Color+Hex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		29F1721C7D2C02C290404EA5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3453807A56A9E8954F52F00E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		355155F72C623546846625AA /* FastingStageBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingStageBadge.swift; sourceTree = "<group>"; };
+		3A39890955712A05F150E167 /* PlanPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPickerSheet.swift; sourceTree = "<group>"; };
+		40B63207CB529C6D9B5446C3 /* HonestFast.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HonestFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43632568F7561CE488F05245 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		4AAA2B0569102D15BCE35137 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		7312D6E00EE85156FEDADEA8 /* PlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCard.swift; sourceTree = "<group>"; };
+		8A351C52E68E87AD1637D59C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4B121CB2524A39A068FDEBA /* FastingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingPlan.swift; sourceTree = "<group>"; };
+		CF415A00D165089757617323 /* TimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerScreen.swift; sourceTree = "<group>"; };
+		D13227BA78A8E55FD0C371A6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D1F0F5918B2ECE6E402825EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastApp.swift; sourceTree = "<group>"; };
+		E14DB95537DEC0BD7446C72D /* TimerRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRingView.swift; sourceTree = "<group>"; };
+		E91903C7DFEEA878BDC67275 /* FastRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastRecord.swift; sourceTree = "<group>"; };
+		EFCB8B0DC0974CC56D892134 /* FastingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingStage.swift; sourceTree = "<group>"; };
+		F041F9FB9A73E6B88C811EAA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		F47462A81526805E8AB5B1DD /* FastingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1070588A1DBE77F8A2C455B6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		14E8286884B7487F6688EDDB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F47462A81526805E8AB5B1DD /* FastingManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		52FD0E2733E16AECA6E0003C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4B121CB2524A39A068FDEBA /* FastingPlan.swift */,
+				EFCB8B0DC0974CC56D892134 /* FastingStage.swift */,
+				E91903C7DFEEA878BDC67275 /* FastRecord.swift */,
+				1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7EABD2D4C200A06938C60B92 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				43632568F7561CE488F05245 /* HistoryScreen.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A270E7D459A07F05950EEB9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8F422F32ADA78B4762FF /* Components */,
+				7EABD2D4C200A06938C60B92 /* History */,
+				D330C15F3CCD7CFD6BE9D225 /* Onboarding */,
+				1070588A1DBE77F8A2C455B6 /* Settings */,
+				AFBF1BEC487B5A1A6C67F6E2 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A45A6C9360AA9269D6398A79 = {
+			isa = PBXGroup;
+			children = (
+				F749F28397141DD8638D1064 /* HonestFast */,
+				A84EDAFA6CEF95040DF0334C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F7E6279FC2762D0D81988C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A84EDAFA6CEF95040DF0334C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40B63207CB529C6D9B5446C3 /* HonestFast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFBF1BEC487B5A1A6C67F6E2 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				3A39890955712A05F150E167 /* PlanPickerSheet.swift */,
+				CF415A00D165089757617323 /* TimerScreen.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		BA334F5CE8C2632329F6262A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */,
+				D13227BA78A8E55FD0C371A6 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF87765AEB31C975CDF90452 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A351C52E68E87AD1637D59C /* Color+Hex.swift */,
+				F041F9FB9A73E6B88C811EAA /* Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D330C15F3CCD7CFD6BE9D225 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				29F1721C7D2C02C290404EA5 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D42D8F422F32ADA78B4762FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				355155F72C623546846625AA /* FastingStageBadge.swift */,
+				7312D6E00EE85156FEDADEA8 /* PlanCard.swift */,
+				4AAA2B0569102D15BCE35137 /* StatCard.swift */,
+				E14DB95537DEC0BD7446C72D /* TimerRingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F749F28397141DD8638D1064 /* HonestFast */ = {
+			isa = PBXGroup;
+			children = (
+				D1F0F5918B2ECE6E402825EB /* Assets.xcassets */,
+				3453807A56A9E8954F52F00E /* ContentView.swift */,
+				DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */,
+				CF87765AEB31C975CDF90452 /* Extensions */,
+				52FD0E2733E16AECA6E0003C /* Models */,
+				A5F7E6279FC2762D0D81988C /* Preview Content */,
+				BA334F5CE8C2632329F6262A /* Services */,
+				14E8286884B7487F6688EDDB /* ViewModels */,
+				A270E7D459A07F05950EEB9A /* Views */,
+			);
+			path = HonestFast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76D0151FEC2C2A8C5AC2B8AB /* HonestFast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633A35C960A01ECAEF5739EB /* Build configuration list for PBXNativeTarget "HonestFast" */;
+			buildPhases = (
+				3EECDA23952F09CDEE926D6D /* Sources */,
+				EB834076AFF3CCA53A434D09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HonestFast;
+			packageProductDependencies = (
+			);
+			productName = HonestFast;
+			productReference = 40B63207CB529C6D9B5446C3 /* HonestFast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B95F92B59C74ECD311530FE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					76D0151FEC2C2A8C5AC2B8AB = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 1FB14D3A5D9B2159DAF0918C /* Build configuration list for PBXProject "HonestFast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A45A6C9360AA9269D6398A79;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76D0151FEC2C2A8C5AC2B8AB /* HonestFast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB834076AFF3CCA53A434D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D48949008B9CB29E7E59256 /* Assets.xcassets in Resources */,
+				155FE240B25CB25C8A5BE952 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EECDA23952F09CDEE926D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8404AB3DA0CB2578F4E6A45 /* Color+Hex.swift in Sources */,
+				9D2C55E42D52A52D5159614D /* ContentView.swift in Sources */,
+				EC3BB309324C05A051F54E41 /* FastRecord.swift in Sources */,
+				F4B8FF36101024AF2C480165 /* FastingManager.swift in Sources */,
+				457ED6C78BC9D259C5309F8F /* FastingPlan.swift in Sources */,
+				EF51376649A3BEBE42021091 /* FastingStage.swift in Sources */,
+				B123B9094279630FDEA95342 /* FastingStageBadge.swift in Sources */,
+				852145804EC68FC93F8BC796 /* HapticService.swift in Sources */,
+				56E84B7C6B0CF4F7221BB8C1 /* HistoryScreen.swift in Sources */,
+				E3D49A756072856BDB1EBEBB /* HonestFastApp.swift in Sources */,
+				BAB826DF735DCDC53399C0F8 /* NotificationService.swift in Sources */,
+				F397199A7458A29452D72A8F /* OnboardingView.swift in Sources */,
+				C5B7D4685BEA3410CE5F722F /* PlanCard.swift in Sources */,
+				F6BE9E8811EDF1D07E737DFE /* PlanPickerSheet.swift in Sources */,
+				0523358312C4AE76CBE4C710 /* SettingsScreen.swift in Sources */,
+				DA0ADE1F2473C471C07C070E /* StatCard.swift in Sources */,
+				880D39C14706C0875C628A0D /* Theme.swift in Sources */,
+				9E53B0B348F425FAE64990F0 /* TimerRingView.swift in Sources */,
+				DF8A0054634651ED91900A93 /* TimerScreen.swift in Sources */,
+				06069E2256D3D2242AF66764 /* UserPreferences.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64C249CA125D2788B944E2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		9E9C845D7BF2EE087DC4C64D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "UILaunchScreen_Generation=YES UIApplicationSceneManifest_Generation=YES CFBundleDisplayName=Honest Fast CFBundleName=Honest Fast UIBackgroundModes=";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F60E6D383C3FABF651AC60A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "UILaunchScreen_Generation=YES UIApplicationSceneManifest_Generation=YES CFBundleDisplayName=Honest Fast CFBundleName=Honest Fast UIBackgroundModes=";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F9752A45BF7F21FA8E76EDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB14D3A5D9B2159DAF0918C /* Build configuration list for PBXProject "HonestFast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C249CA125D2788B944E2B2 /* Debug */,
+				F9752A45BF7F21FA8E76EDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		633A35C960A01ECAEF5739EB /* Build configuration list for PBXNativeTarget "HonestFast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60E6D383C3FABF651AC60A3 /* Debug */,
+				9E9C845D7BF2EE087DC4C64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B95F92B59C74ECD311530FE0 /* Project object */;
+}
