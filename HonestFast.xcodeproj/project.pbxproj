@@ -10,9 +10,12 @@
 		0523358312C4AE76CBE4C710 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */; };
 		06069E2256D3D2242AF66764 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */; };
 		155FE240B25CB25C8A5BE952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */; };
+		2E80F6AB24B37F3900104C21 /* HonestFastWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		457ED6C78BC9D259C5309F8F /* FastingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B121CB2524A39A068FDEBA /* FastingPlan.swift */; };
+		4AC98B19558A4CFAA3BD500F /* WatchTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */; };
 		56E84B7C6B0CF4F7221BB8C1 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43632568F7561CE488F05245 /* HistoryScreen.swift */; };
 		5D48949008B9CB29E7E59256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F0F5918B2ECE6E402825EB /* Assets.xcassets */; };
+		5D6050AAD62EE81DA44F1B91 /* HonestFastWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA174D64FC5B3513E0718C1 /* HonestFastWatchApp.swift */; };
 		852145804EC68FC93F8BC796 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04F1DB9BD2948FCEDEFD919 /* HapticService.swift */; };
 		880D39C14706C0875C628A0D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041F9FB9A73E6B88C811EAA /* Theme.swift */; };
 		9D2C55E42D52A52D5159614D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453807A56A9E8954F52F00E /* ContentView.swift */; };
@@ -20,7 +23,10 @@
 		B123B9094279630FDEA95342 /* FastingStageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355155F72C623546846625AA /* FastingStageBadge.swift */; };
 		BAB826DF735DCDC53399C0F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13227BA78A8E55FD0C371A6 /* NotificationService.swift */; };
 		C5B7D4685BEA3410CE5F722F /* PlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7312D6E00EE85156FEDADEA8 /* PlanCard.swift */; };
+		C929E058326D9024FC1346A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E8359FE762F3B28CD139BA /* Assets.xcassets */; };
+		D6B1D75B5E61F8A24FDBD006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */; };
 		DA0ADE1F2473C471C07C070E /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA2B0569102D15BCE35137 /* StatCard.swift */; };
+		DDA5278483EA316FC4A73537 /* HonestFastWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D884FB1FD8B4B53BF7147B /* HonestFastWidget.swift */; };
 		DF8A0054634651ED91900A93 /* TimerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF415A00D165089757617323 /* TimerScreen.swift */; };
 		E3D49A756072856BDB1EBEBB /* HonestFastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */; };
 		EC3BB309324C05A051F54E41 /* FastRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91903C7DFEEA878BDC67275 /* FastRecord.swift */; };
@@ -31,23 +37,54 @@
 		F8404AB3DA0CB2578F4E6A45 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A351C52E68E87AD1637D59C /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36EB07B29C04975331E843CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B95F92B59C74ECD311530FE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 197791F5A7BC1160BA8B38E6;
+			remoteInfo = HonestFastWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B311272B2B644937C2396942 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E80F6AB24B37F3900104C21 /* HonestFastWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C8C35B2E8CFD70FB78D0560 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		1EAE6D6B2D65CAAFC4296011 /* HonestFastWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonestFastWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F1721C7D2C02C290404EA5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3453807A56A9E8954F52F00E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		355155F72C623546846625AA /* FastingStageBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingStageBadge.swift; sourceTree = "<group>"; };
 		3A39890955712A05F150E167 /* PlanPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPickerSheet.swift; sourceTree = "<group>"; };
 		40B63207CB529C6D9B5446C3 /* HonestFast.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HonestFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43632568F7561CE488F05245 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HonestFastWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAA2B0569102D15BCE35137 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD0C7F31FA7384551BC1DB8 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		7312D6E00EE85156FEDADEA8 /* PlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCard.swift; sourceTree = "<group>"; };
 		8A351C52E68E87AD1637D59C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		9EA174D64FC5B3513E0718C1 /* HonestFastWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastWatchApp.swift; sourceTree = "<group>"; };
 		AA75C5A113EE5A19A9BD08EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4B121CB2524A39A068FDEBA /* FastingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingPlan.swift; sourceTree = "<group>"; };
+		C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTimerView.swift; sourceTree = "<group>"; };
 		CF415A00D165089757617323 /* TimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerScreen.swift; sourceTree = "<group>"; };
 		D13227BA78A8E55FD0C371A6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		D1F0F5918B2ECE6E402825EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4E8359FE762F3B28CD139BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D884FB1FD8B4B53BF7147B /* HonestFastWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastWidget.swift; sourceTree = "<group>"; };
 		DB0A4B7BB6FE49D96CEB21C6 /* HonestFastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonestFastApp.swift; sourceTree = "<group>"; };
 		E14DB95537DEC0BD7446C72D /* TimerRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRingView.swift; sourceTree = "<group>"; };
 		E91903C7DFEEA878BDC67275 /* FastRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastRecord.swift; sourceTree = "<group>"; };
@@ -85,6 +122,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		55530349C9A8FA22BAF79D61 /* HonestFastWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D4E8359FE762F3B28CD139BA /* Assets.xcassets */,
+				9EA174D64FC5B3513E0718C1 /* HonestFastWatchApp.swift */,
+				C62ACA8C7B20A47B91CAF7D8 /* WatchTimerView.swift */,
+			);
+			path = HonestFastWatch;
+			sourceTree = "<group>";
+		};
 		7EABD2D4C200A06938C60B92 /* History */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				F749F28397141DD8638D1064 /* HonestFast */,
+				55530349C9A8FA22BAF79D61 /* HonestFastWatch */,
+				BB4911C3998FEDF49EA36F63 /* HonestFastWidget */,
 				A84EDAFA6CEF95040DF0334C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				40B63207CB529C6D9B5446C3 /* HonestFast.app */,
+				1EAE6D6B2D65CAAFC4296011 /* HonestFastWatch.app */,
+				4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +196,15 @@
 				D13227BA78A8E55FD0C371A6 /* NotificationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BB4911C3998FEDF49EA36F63 /* HonestFastWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5A9EAF7AF1392164A49E8ECF /* Assets.xcassets */,
+				D6D884FB1FD8B4B53BF7147B /* HonestFastWidget.swift */,
+			);
+			path = HonestFastWidget;
 			sourceTree = "<group>";
 		};
 		CF87765AEB31C975CDF90452 /* Extensions */ = {
@@ -194,16 +254,54 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D0159304049D4C2EA758252 /* HonestFastWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D01AE054EFC21DD94E598D3E /* Build configuration list for PBXNativeTarget "HonestFastWatch" */;
+			buildPhases = (
+				ED8F69E06CE605B27F89B3F9 /* Sources */,
+				F3FD4B5B765FD54CD1711FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HonestFastWatch;
+			packageProductDependencies = (
+			);
+			productName = HonestFastWatch;
+			productReference = 1EAE6D6B2D65CAAFC4296011 /* HonestFastWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		197791F5A7BC1160BA8B38E6 /* HonestFastWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D9C5D7F7AFAFE6C9EB9DB5A /* Build configuration list for PBXNativeTarget "HonestFastWidget" */;
+			buildPhases = (
+				F41855DBFBA20A08B04AB41E /* Sources */,
+				A16CF3152D6AB9C7C0ECA4EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HonestFastWidget;
+			packageProductDependencies = (
+			);
+			productName = HonestFastWidget;
+			productReference = 4980207D6BF2A31E5C81F663 /* HonestFastWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		76D0151FEC2C2A8C5AC2B8AB /* HonestFast */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633A35C960A01ECAEF5739EB /* Build configuration list for PBXNativeTarget "HonestFast" */;
 			buildPhases = (
 				3EECDA23952F09CDEE926D6D /* Sources */,
 				EB834076AFF3CCA53A434D09 /* Resources */,
+				B311272B2B644937C2396942 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E25AADB4987DE9DC8F592949 /* PBXTargetDependency */,
 			);
 			name = HonestFast;
 			packageProductDependencies = (
@@ -221,6 +319,12 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					0D0159304049D4C2EA758252 = {
+						DevelopmentTeam = "";
+					};
+					197791F5A7BC1160BA8B38E6 = {
+						DevelopmentTeam = "";
+					};
 					76D0151FEC2C2A8C5AC2B8AB = {
 						DevelopmentTeam = "";
 					};
@@ -241,17 +345,35 @@
 			projectRoot = "";
 			targets = (
 				76D0151FEC2C2A8C5AC2B8AB /* HonestFast */,
+				0D0159304049D4C2EA758252 /* HonestFastWatch */,
+				197791F5A7BC1160BA8B38E6 /* HonestFastWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A16CF3152D6AB9C7C0ECA4EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1D75B5E61F8A24FDBD006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB834076AFF3CCA53A434D09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D48949008B9CB29E7E59256 /* Assets.xcassets in Resources */,
 				155FE240B25CB25C8A5BE952 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FD4B5B765FD54CD1711FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C929E058326D9024FC1346A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +407,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8F69E06CE605B27F89B3F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6050AAD62EE81DA44F1B91 /* HonestFastWatchApp.swift in Sources */,
+				4AC98B19558A4CFAA3BD500F /* WatchTimerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41855DBFBA20A08B04AB41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA5278483EA316FC4A73537 /* HonestFastWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E25AADB4987DE9DC8F592949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 197791F5A7BC1160BA8B38E6 /* HonestFastWidget */;
+			targetProxy = 36EB07B29C04975331E843CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1B7AAA14BDDEABD8959D98C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast WKCompanionAppBundleIdentifier=com.loopspur.honestfast";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
 		64C249CA125D2788B944E2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,10 +506,23 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7D18398C44BA800A8C0DB13B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast WKCompanionAppBundleIdentifier=com.loopspur.honestfast";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
@@ -371,6 +544,38 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		C71BF6C17F5A71AB666F9F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast Widget NSExtension_NSExtensionPointIdentifier=com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E729A4C37E167FC8AB48B205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_VALUES = "CFBundleDisplayName=Honest Fast Widget NSExtension_NSExtensionPointIdentifier=com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.loopspur.honestfast.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		F60E6D383C3FABF651AC60A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -442,10 +647,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -461,11 +666,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		4D9C5D7F7AFAFE6C9EB9DB5A /* Build configuration list for PBXNativeTarget "HonestFastWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E729A4C37E167FC8AB48B205 /* Debug */,
+				C71BF6C17F5A71AB666F9F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		633A35C960A01ECAEF5739EB /* Build configuration list for PBXNativeTarget "HonestFast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F60E6D383C3FABF651AC60A3 /* Debug */,
 				9E9C845D7BF2EE087DC4C64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D01AE054EFC21DD94E598D3E /* Build configuration list for PBXNativeTarget "HonestFastWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D18398C44BA800A8C0DB13B /* Debug */,
+				1B7AAA14BDDEABD8959D98C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
