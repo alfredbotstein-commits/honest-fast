@@ -1,0 +1,67 @@
+{
+  "app_name": "Honest Fast: Fasting Timer",
+  "subtitle": "No Subscription. Just Fasting.",
+  "bundle_id": "com.loopspur.honestfast",
+  "version": "1.0.4",
+  "developer": "Loopspur LLC",
+
+  "keywords": "fasting,timer,intermittent,fast,tracker,16:8,18:6,20:4,omad,weight,loss,health,widget,simple,zero,alternative",
+
+  "description_short": "Stop paying $70/year for a countdown timer. Honest Fast tracks your fasts, shows your streaks, and stays out of your way. No subscription. No ads. $6.99 once, yours forever.",
+
+  "description_long": "Stop paying $70/year for a countdown timer.\n\nHonest Fast is the intermittent fasting app that does exactly what you need — tracks your fasts, shows your streaks, and stays out of your way. No subscription. No ads. No premium paywall hiding basic features.\n\nOne price. $6.99. Yours forever.\n\n---\n\nWHY PEOPLE SWITCH TO HONEST FAST:\n\nThe big fasting apps charge $50-70/year for a timer. They lock custom schedules behind paywalls. They show ads during your fasting window. They require accounts and harvest your health data.\n\nThat's insane.\n\nFEATURES — ALL INCLUDED:\n\n⏱️ Clean fasting timer — one-tap start/stop with visual progress ring\n📋 All IF protocols — 16:8, 18:6, 20:4, OMAD, custom schedules\n📊 History & streaks — track every fast, see your streak grow\n📱 Home screen widget — see your fast at a glance, no app needed\n⌚ Apple Watch app — timer and complications on your wrist\n🌙 Dark mode — because you're probably fasting\n☁️ iCloud sync — your data, across your devices only\n\nNO SUBSCRIPTION. NO ADS. NO BS.\n\nBuilt by people who actually fast. We got tired of overpaying for a timer.\n\nPRIVACY FIRST:\n- No account required\n- No health data collection\n- Your data stays on your device\n\nDownload Honest Fast. Start your fast. Keep your money.",
+
+  "whats_new": "🎉 Honest Fast is here.\n\n- Clean, reliable fasting timer\n- All IF protocols: 16:8, 18:6, 20:4, OMAD, custom\n- Streak tracking to keep you motivated\n- Home screen and Apple Watch widgets\n- One price: $6.99 forever\n\nNo subscription. No ads. No BS.",
+
+  "category_primary": "Health & Fitness",
+  "category_secondary": "Lifestyle",
+  "age_rating": "4+",
+  "price": "6.99",
+  "price_model": "one-time-purchase",
+
+  "privacy_policy_url": "https://loopspur.com/honest-fast/privacy",
+  "support_url": "https://loopspur.com/honest-fast/support",
+  "marketing_url": "https://loopspur.com/honest-fast",
+
+  "platforms": {
+    "ios": {
+      "minimum_os": "16.0",
+      "devices": ["iPhone", "Apple Watch"],
+      "supports_tablet": false
+    },
+    "android": {
+      "minimum_sdk": 26,
+      "target_sdk": 34
+    }
+  },
+
+  "icon_assets": {
+    "app_store_1024": "icons/icon-1024x1024.png",
+    "play_store_512": "icons/icon-512x512.png",
+    "adaptive_icon": "icons/adaptive-icon.png",
+    "feature_graphic": "icons/feature-graphic-1024x500.png",
+    "ios_sizes": [
+      "icons/icon-180x180.png",
+      "icons/icon-167x167.png",
+      "icons/icon-152x152.png",
+      "icons/icon-120x120.png",
+      "icons/icon-87x87.png",
+      "icons/icon-80x80.png",
+      "icons/icon-76x76.png",
+      "icons/icon-60x60.png",
+      "icons/icon-58x58.png",
+      "icons/icon-40x40.png",
+      "icons/icon-29x29.png",
+      "icons/icon-20x20.png",
+      "icons/icon-16x16.png"
+    ]
+  },
+
+  "content_rights": {
+    "uses_third_party_content": false,
+    "contains_ads": false,
+    "has_in_app_purchases": false
+  },
+
+  "review_notes": "Honest Fast is a standalone intermittent fasting timer. No account or login required. The app is a one-time purchase at $6.99 with no in-app purchases or subscriptions. All features are available immediately after purchase."
+}
